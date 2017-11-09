@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter ur Location" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cz9-0S-At4">
+                                <rect key="frame" x="107" y="28" width="357" height="30"/>
+                                <color key="backgroundColor" red="0.97647064920000004" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="357" id="Ptl-9S-GXs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YuZ-Ud-8aH">
+                                <rect key="frame" x="50" y="94" width="500" height="235"/>
+                            </mapView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vhx-X5-ap0">
+                                <rect key="frame" x="50" y="392" width="500" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QUN-HV-cnW">
+                                <rect key="frame" x="50" y="453" width="500" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wje-m7-ucC">
+                                <rect key="frame" x="50" y="519" width="500" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941182850000004" green="0.0039215688589999999" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="YuZ-Ud-8aH" firstAttribute="top" secondItem="Cz9-0S-At4" secondAttribute="bottom" constant="36" id="0Ua-4i-VoY"/>
+                            <constraint firstItem="YuZ-Ud-8aH" firstAttribute="leading" secondItem="Vhx-X5-ap0" secondAttribute="leading" id="57M-ni-vYZ"/>
+                            <constraint firstItem="wje-m7-ucC" firstAttribute="top" secondItem="QUN-HV-cnW" secondAttribute="bottom" constant="36" id="6V8-Gt-oyd"/>
+                            <constraint firstItem="Cz9-0S-At4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="BHS-Fd-ONj"/>
+                            <constraint firstItem="QUN-HV-cnW" firstAttribute="trailing" secondItem="wje-m7-ucC" secondAttribute="trailing" id="BxP-Vm-xsi"/>
+                            <constraint firstItem="Vhx-X5-ap0" firstAttribute="top" secondItem="YuZ-Ud-8aH" secondAttribute="bottom" constant="63" id="CGA-Gh-ke8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cz9-0S-At4" secondAttribute="trailing" constant="120" id="L66-yV-xPe"/>
+                            <constraint firstItem="QUN-HV-cnW" firstAttribute="trailing" secondItem="Vhx-X5-ap0" secondAttribute="trailing" id="Mch-fH-cPC"/>
+                            <constraint firstItem="Cz9-0S-At4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="91" id="N66-bq-RST"/>
+                            <constraint firstItem="YuZ-Ud-8aH" firstAttribute="trailing" secondItem="Vhx-X5-ap0" secondAttribute="trailing" id="Nca-fP-lDf"/>
+                            <constraint firstItem="QUN-HV-cnW" firstAttribute="top" secondItem="Vhx-X5-ap0" secondAttribute="bottom" constant="31" id="Sxe-aT-F5A"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wje-m7-ucC" secondAttribute="bottom" constant="51" id="UdM-mq-yNg"/>
+                            <constraint firstItem="Vhx-X5-ap0" firstAttribute="leading" secondItem="QUN-HV-cnW" secondAttribute="leading" id="ghz-Ik-ksm"/>
+                            <constraint firstItem="YuZ-Ud-8aH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="l7g-bq-OmO"/>
+                            <constraint firstItem="YuZ-Ud-8aH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ufv-ak-QaV"/>
+                            <constraint firstItem="wje-m7-ucC" firstAttribute="leading" secondItem="QUN-HV-cnW" secondAttribute="leading" id="xqQ-aT-DRz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Description" destination="wje-m7-ucC" id="FJy-mV-wgE"/>
+                        <outlet property="Humidity" destination="QUN-HV-cnW" id="M3C-lE-m5k"/>
+                        <outlet property="Temp" destination="Vhx-X5-ap0" id="gDq-xP-s8X"/>
+                        <outlet property="getLocation" destination="Cz9-0S-At4" id="DiG-ld-TQa"/>
+                        <outlet property="myMapView" destination="YuZ-Ud-8aH" id="1So-lD-mAm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
